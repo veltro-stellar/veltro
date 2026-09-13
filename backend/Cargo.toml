@@ -77,7 +77,7 @@ stellar-xdr = { version = "26.0.1", features = ["std", "curr", "base64"] }
 stellar-strkey = "0.0.13"
 ed25519-dalek = "3"
 base32 = "0.5"
-base64 = "0.22"
+base64 = "0.23"
 jsonwebtoken = { version = "10.4", features = ["rust_crypto"] }
 utoipa = { version = "5.5", features = ["axum_extras", "chrono", "uuid"] }
 utoipa-swagger-ui = { version = "9.0", features = ["axum"] }
