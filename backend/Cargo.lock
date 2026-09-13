@@ -424,7 +424,7 @@ dependencies = [
  "sync_wrapper",
  "tokio",
  "tokio-tungstenite 0.29.0",
- "tower 0.5.3",
+ "tower",
  "tower-layer",
  "tower-service",
  "tracing",
@@ -1432,7 +1432,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -2593,7 +2593,7 @@ version = "0.50.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7957b9740744892f114936ab4a57b3f487491bbeafaf8083688b16841a4240e5"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -2888,77 +2888,6 @@ checksum = "aab41826031698d6ffcd9cff78ef56ef998e39dc7e5067cdfebe373842d4723b"
 dependencies = [
  "getrandom 0.4.2",
  "phc",
-]
-
-[[package]]
-name = "veltro-backend"
-version = "0.1.0"
-dependencies = [
- "aes-gcm",
- "anyhow",
- "argon2",
- "async-graphql",
- "async-graphql-axum",
- "async-lock",
- "async-stream",
- "async-trait",
- "axum",
- "base32",
- "base64 0.22.1",
- "chrono",
- "criterion",
- "csv",
- "dashmap",
- "data-encoding",
- "dotenvy",
- "ed25519-dalek 3.0.0",
- "failsafe",
- "futures",
- "hex",
- "hmac 0.13.0",
- "http-body-util",
- "ipnetwork",
- "jsonwebtoken",
- "lazy_static",
- "lettre",
- "log",
- "ndarray",
- "opentelemetry",
- "opentelemetry-otlp",
- "opentelemetry_sdk",
- "prometheus",
- "rand 0.10.2",
- "redis",
- "reqwest",
- "rust_decimal",
- "rust_xlsxwriter",
- "serde",
- "serde_json",
- "sha1 0.11.0",
- "sha2 0.11.0",
- "sqlx",
- "stellar-strkey",
- "stellar-xdr",
- "tempfile",
- "thiserror 2.0.20",
- "tokio",
- "tokio-retry",
- "tokio-tungstenite 0.30.0",
- "toml",
- "tower 0.4.13",
- "tower-http 0.7.0",
- "tracing",
- "tracing-appender",
- "tracing-log",
- "tracing-logstash",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "url",
- "urlencoding",
- "utoipa",
- "utoipa-swagger-ui",
- "uuid",
- "validator",
 ]
 
 [[package]]
@@ -3620,7 +3549,7 @@ dependencies = [
  "sync_wrapper",
  "tokio",
  "tokio-rustls",
- "tower 0.5.3",
+ "tower",
  "tower-http 0.6.11",
  "tower-service",
  "url",
@@ -3800,7 +3729,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3858,7 +3787,7 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "webpki-root-certs",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -4186,7 +4115,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "52d1cfed4120b4d927bf7c0f86d2087a4a7d6027c906d9f9d525a80573b9be51"
 dependencies = [
  "libc",
- "windows-sys 0.61.2",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -4584,7 +4513,7 @@ dependencies = [
  "getrandom 0.4.2",
  "once_cell",
  "rustix",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -4853,22 +4782,6 @@ checksum = "7d56353a2a665ad0f41a421187180aab746c8c325620617ad883a99a1cbe66d2"
 
 [[package]]
 name = "tower"
-version = "0.4.13"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b8fa9be0de6cf49e536ce1851f987bd21a43b771b09473c3549a6c853db37c1c"
-dependencies = [
- "futures-core",
- "futures-util",
- "pin-project",
- "pin-project-lite",
- "tokio",
- "tower-layer",
- "tower-service",
- "tracing",
-]
-
-[[package]]
-name = "tower"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ebe5ef63511595f1344e2d5cfa636d973292adc0eec1f0ad45fae9f0851ab1d4"
@@ -4895,7 +4808,7 @@ dependencies = [
  "http",
  "http-body",
  "pin-project-lite",
- "tower 0.5.3",
+ "tower",
  "tower-layer",
  "tower-service",
  "url",
@@ -5282,6 +5195,77 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "accd4ea62f7bb7a82fe23066fb0957d48ef677f6eeb8215f372f52e48bb32426"
 
 [[package]]
+name = "veltro-backend"
+version = "0.1.0"
+dependencies = [
+ "aes-gcm",
+ "anyhow",
+ "argon2",
+ "async-graphql",
+ "async-graphql-axum",
+ "async-lock",
+ "async-stream",
+ "async-trait",
+ "axum",
+ "base32",
+ "base64 0.22.1",
+ "chrono",
+ "criterion",
+ "csv",
+ "dashmap",
+ "data-encoding",
+ "dotenvy",
+ "ed25519-dalek 3.0.0",
+ "failsafe",
+ "futures",
+ "hex",
+ "hmac 0.13.0",
+ "http-body-util",
+ "ipnetwork",
+ "jsonwebtoken",
+ "lazy_static",
+ "lettre",
+ "log",
+ "ndarray",
+ "opentelemetry",
+ "opentelemetry-otlp",
+ "opentelemetry_sdk",
+ "prometheus",
+ "rand 0.10.2",
+ "redis",
+ "reqwest",
+ "rust_decimal",
+ "rust_xlsxwriter",
+ "serde",
+ "serde_json",
+ "sha1 0.11.0",
+ "sha2 0.11.0",
+ "sqlx",
+ "stellar-strkey",
+ "stellar-xdr",
+ "tempfile",
+ "thiserror 2.0.20",
+ "tokio",
+ "tokio-retry",
+ "tokio-tungstenite 0.30.0",
+ "toml",
+ "tower",
+ "tower-http 0.7.0",
+ "tracing",
+ "tracing-appender",
+ "tracing-log",
+ "tracing-logstash",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "url",
+ "urlencoding",
+ "utoipa",
+ "utoipa-swagger-ui",
+ "uuid",
+ "validator",
+]
+
+[[package]]
 name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5505,7 +5489,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.48.0",
 ]
 
 [[package]]
