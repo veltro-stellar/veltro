@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: veltro-frontend
+  namespace: veltro
+  labels:
+    app: veltro
+    component: frontend
+spec:
+  type: ClusterIP
+  sessionAffinity: None
+  ports:
+  - name: http
+    port: 3000
+    targetPort: http
+    protocol: TCP
+  selector:
+    app: veltro
+    component: frontend

@@ -1,0 +1,32 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="depth" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Left arm face -->
+  <polygon points="5,7 9,7 14,20 11.5,20" fill="url(#face)"/>
+  <!-- Left arm depth -->
+  <polygon points="5,7 5,10.5 11.5,23 14,20 9,7" fill="url(#depth)" opacity="0.6"/>
+  <!-- Right arm face -->
+  <polygon points="27,7 23,7 18,20 20.5,20" fill="url(#face)"/>
+  <!-- Right arm depth -->
+  <polygon points="27,7 27,10.5 20.5,23 18,20 23,7" fill="url(#depth)" opacity="0.6"/>
+  <!-- Bottom tip face -->
+  <polygon points="11.5,20 14,20 16,25 18,20 20.5,20 16,27" fill="url(#face)"/>
+  <!-- Bottom tip depth -->
+  <polygon points="11.5,20 16,27 16,25 14,20" fill="url(#depth)" opacity="0.5"/>
+  <!-- Top highlights -->
+  <line x1="5" y1="7" x2="9" y2="7" stroke="#bae6fd" stroke-width="0.7" opacity="0.9"/>
+  <line x1="23" y1="7" x2="27" y2="7" stroke="#bae6fd" stroke-width="0.7" opacity="0.9"/>
+</svg>

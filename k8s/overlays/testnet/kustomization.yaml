@@ -1,0 +1,32 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: veltro-testnet
+
+bases:
+- ../../
+
+namePrefix: testnet-
+
+commonLabels:
+  environment: testnet
+
+resources:
+- namespace.yaml
+
+patches:
+- path: backend-patch.yaml
+
+images:
+- name: veltro/backend
+  newTag: testnet
+- name: veltro/frontend
+  newTag: testnet
+
+configMapGenerator:
+- name: veltro-config
+  behavior: merge
+  literals:
+  - stellar-network=testnet
+  - rust-log=info
+  - cors-allowed-origins=https://testnet.veltro.com

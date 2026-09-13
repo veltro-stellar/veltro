@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: veltro
+  labels:
+    name: veltro
+    environment: production
+    app: veltro
+  annotations:
+    description: "Veltro application namespace"

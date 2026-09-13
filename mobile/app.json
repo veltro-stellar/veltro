@@ -1,0 +1,21 @@
+{
+  "name": "Veltro",
+  "displayName": "Veltro",
+  "expo": {
+    "name": "Veltro",
+    "slug": "veltro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.veltro.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.veltro.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  }
+}
