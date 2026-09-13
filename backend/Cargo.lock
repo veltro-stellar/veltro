@@ -2322,9 +2322,9 @@ dependencies = [
 
 [[package]]
 name = "jsonwebtoken"
-version = "10.4.0"
+version = "11.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eba32bfb4ffdeaca3e34431072faf01745c9b26d25504aa7a6cf5684334fc4fc"
+checksum = "881733cbc631fc9e472e24447ce32a64bedf2da498d6d8570b08edc87de71f65"
 dependencies = [
  "base64 0.22.1",
  "ed25519-dalek 2.2.0",
@@ -2888,77 +2888,6 @@ checksum = "aab41826031698d6ffcd9cff78ef56ef998e39dc7e5067cdfebe373842d4723b"
 dependencies = [
  "getrandom 0.4.2",
  "phc",
-]
-
-[[package]]
-name = "veltro-backend"
-version = "0.1.0"
-dependencies = [
- "aes-gcm",
- "anyhow",
- "argon2",
- "async-graphql",
- "async-graphql-axum",
- "async-lock",
- "async-stream",
- "async-trait",
- "axum",
- "base32",
- "base64 0.22.1",
- "chrono",
- "criterion",
- "csv",
- "dashmap",
- "data-encoding",
- "dotenvy",
- "ed25519-dalek 3.0.0",
- "failsafe",
- "futures",
- "hex",
- "hmac 0.13.0",
- "http-body-util",
- "ipnetwork",
- "jsonwebtoken",
- "lazy_static",
- "lettre",
- "log",
- "ndarray",
- "opentelemetry",
- "opentelemetry-otlp",
- "opentelemetry_sdk",
- "prometheus",
- "rand 0.10.2",
- "redis",
- "reqwest",
- "rust_decimal",
- "rust_xlsxwriter",
- "serde",
- "serde_json",
- "sha1 0.11.0",
- "sha2 0.11.0",
- "sqlx",
- "stellar-strkey",
- "stellar-xdr",
- "tempfile",
- "thiserror 2.0.20",
- "tokio",
- "tokio-retry",
- "tokio-tungstenite 0.30.0",
- "toml",
- "tower 0.4.13",
- "tower-http 0.7.0",
- "tracing",
- "tracing-appender",
- "tracing-log",
- "tracing-logstash",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "url",
- "urlencoding",
- "utoipa",
- "utoipa-swagger-ui",
- "uuid",
- "validator",
 ]
 
 [[package]]
@@ -5280,6 +5209,77 @@ name = "vcpkg"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "accd4ea62f7bb7a82fe23066fb0957d48ef677f6eeb8215f372f52e48bb32426"
+
+[[package]]
+name = "veltro-backend"
+version = "0.1.0"
+dependencies = [
+ "aes-gcm",
+ "anyhow",
+ "argon2",
+ "async-graphql",
+ "async-graphql-axum",
+ "async-lock",
+ "async-stream",
+ "async-trait",
+ "axum",
+ "base32",
+ "base64 0.22.1",
+ "chrono",
+ "criterion",
+ "csv",
+ "dashmap",
+ "data-encoding",
+ "dotenvy",
+ "ed25519-dalek 3.0.0",
+ "failsafe",
+ "futures",
+ "hex",
+ "hmac 0.13.0",
+ "http-body-util",
+ "ipnetwork",
+ "jsonwebtoken",
+ "lazy_static",
+ "lettre",
+ "log",
+ "ndarray",
+ "opentelemetry",
+ "opentelemetry-otlp",
+ "opentelemetry_sdk",
+ "prometheus",
+ "rand 0.10.2",
+ "redis",
+ "reqwest",
+ "rust_decimal",
+ "rust_xlsxwriter",
+ "serde",
+ "serde_json",
+ "sha1 0.11.0",
+ "sha2 0.11.0",
+ "sqlx",
+ "stellar-strkey",
+ "stellar-xdr",
+ "tempfile",
+ "thiserror 2.0.20",
+ "tokio",
+ "tokio-retry",
+ "tokio-tungstenite 0.30.0",
+ "toml",
+ "tower 0.4.13",
+ "tower-http 0.7.0",
+ "tracing",
+ "tracing-appender",
+ "tracing-log",
+ "tracing-logstash",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "url",
+ "urlencoding",
+ "utoipa",
+ "utoipa-swagger-ui",
+ "uuid",
+ "validator",
+]
 
 [[package]]
 name = "version_check"
